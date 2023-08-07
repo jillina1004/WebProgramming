@@ -971,7 +971,7 @@ h1 = logo
 #signIn .signInBox .snsSignIn li:nth-child(1) a {
     background-color: #ffea26;
     color: blue;
-    background-image: url(../../javascript/all/WebProject/imgs/ico_kakao.png);
+    background-image: url(../imgs/ico_kakao.png);
 
 }
 
@@ -980,7 +980,7 @@ h1 = logo
     background-color: #00c300;
 
 
-    background-image: url(../../javascript/all/WebProject/imgs/ico_naver.png);
+    background-image: url(../imgs/ico_naver.png);
 
 }
 
@@ -989,7 +989,7 @@ h1 = logo
     background-color: #405ea9;
 
 
-    background-image: url(../../javascript/all/WebProject/imgs/ico_face.png);
+    background-image: url(../imgs/ico_face.png);
 
 }
 
@@ -997,7 +997,7 @@ h1 = logo
 
     background-color: #888888;
 
-    background-image: url(../../javascript/all/WebProject/imgs/ico_cellphone.png);
+    background-image: url(../imgs/ico_cellphone.png);
 
 }
 
