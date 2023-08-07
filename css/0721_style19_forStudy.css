@@ -1,0 +1,17 @@
+.text {
+    color: yellow;
+  }
+  div {
+    color: blue;
+  }
+  * {
+    color: rgb(42, 190, 213);
+  }
+  
+  div.text.nr2 *  {
+    color: red;
+  }
+  
+  div.text.nr3 b {
+    color: peru;
+  }

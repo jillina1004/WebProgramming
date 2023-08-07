@@ -1,0 +1,34 @@
+/* 0724 */
+.cf::after{content: ''; display: block; clear: both;
+
+}
+body{background-color: aliceblue;}
+#wrap{
+    background-color: red;
+    max-width:800px; margin:0 auto;}
+header h1{color: brown;text-align: center;}
+header{
+    background-color: blanchedalmond;
+    border-bottom: black solid 1px;}
+nav{
+    background-color: orangered;
+    width: 200px;
+    float:left;
+}
+section{
+    background-color: skyblue;
+    width:calc(98% - 200px);
+    float:right;
+}
+nav>div{border:1px black dotted;}
+a{text-decoration: none;}
+p{font-family: '휴먼편지체'; font-size: 1em; text-indent: 1em;}
+h2{color: blue; text-shadow:rgba(0, 0, 255, 0.842)1px 1px 1em;}
+footer{clear: both;
+    background-color: orange;border-radius: 10px;}
+.picTable{width:100%; display:inline;}
+.picTable td{width:auto; display:inline;}
+.picTable td img{max-width:100%;}
+/* .picTable tr{display: line;}
+
+.picTable tr td{display: line;} */

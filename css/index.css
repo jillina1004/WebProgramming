@@ -1,0 +1,1249 @@
+/* THE TABLE OF CONTENTS!  
+0. CSS RESET
+1. CLASS SETUP
+2. HEADER
+3. BODY OF *INDEX*
+4. FOOTER
+5. BODY OF aboutBook
+
+
+
+
+
+
+*/
+
+
+
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+0. CSS RESET
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+::placeholder {
+    font-size: 13px;
+    color: red;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+1. CLASS SETUP
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.blind {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -9999999999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+
+}
+
+.spaned {
+    display: block;
+}
+
+.global-size {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cf::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+2. HEADER
+    nav = menu bar
+    .depth1 = First list of menu bar.
+    .depth2 = sub list
+    h1 = title logo
+    >div = all box
+    .memberInfo = sign in&up
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#header {
+    box-shadow: 0 1px 0 #ddd;
+    border: 0px solid #000;
+    position: sticky;
+    top: 0;
+    padding: 0px 0;
+    z-index: 15;
+    background-color: #f5f5f5;
+}
+#header .menuTool, #header .menuToolClose {
+    display:none;
+}
+#header h1 {
+    margin-top: 0px;
+    float: left;
+}
+
+#header>div {
+    position: relative;
+}
+
+#header .memberInfo {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 12px;
+    z-index: 20;
+
+}
+
+#header .memberInfo a {
+    margin-left: 10px;
+}
+
+#header nav {
+    float: right;
+}
+
+nav .depth1>li {
+    /* display: inline-block; */
+    font-size: 15px;
+    color: #888888;
+    font-weight: bolder;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 30px 20px;
+    float: left;
+    border: 0px solid black;
+    position: relative;
+
+}
+nav .depth1>li>i{
+    display: none;
+}
+
+nav .depth1>li:hover {
+    transition: all 1s;
+    color: #000;
+}
+
+nav .depth2 {
+    /* border: 1px solid #000; */
+    padding: 20px 0px;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 220px;
+    background-color: #333;
+    box-shadow: 0 -2px 0 #cda25a;
+    z-index: 1;
+    /* outline-top: 2px solid #cda25a; */
+    display: none;
+
+}
+
+nav .depth1>li:hover .depth2 {
+    display: block;
+}
+
+nav .depth2>li {
+    font-size: 13px;
+    color: #9d9d9d;
+    font-weight: normal;
+    font-family: "Nanum Gothic", sans-serif;
+    line-height: 2.6;
+}
+
+nav .depth2>li a {
+    padding: 0 20px;
+    display: block;
+}
+
+nav .depth2>li a:hover {
+    color: #cda25a;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+3. body of *Index*
+1st article : slide show (not finished)
+2nd article : under info image group
+    each img have been putted in div.
+3rd article : Preview of notice, know-how QnA Admin'sBlog Download
+4th article : count of viewers
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#section {
+    position: relative;
+}
+
+#section article:nth-child(2)>div {
+    width: 32%;
+    float: left;
+    /* border: 1px solid #000; */
+    text-align: center;
+    /* overflow: hidden; */
+
+}
+
+#section article:nth-child(2)>div img {
+
+    transition: all 0.5s;
+}
+
+#section article:nth-child(2)>div:hover img {
+    transform: scale(0.95);
+}
+
+#section article:nth-child(2)>div:nth-child(2) {
+    margin: 0 2%;
+}
+
+#section article:nth-child(3) li {
+    width: 49%;
+    float: left;
+    margin-top: 30px;
+}
+
+#section article:nth-child(3) ul li:nth-child(odd) {
+    margin-right: 2%;
+}
+
+#section article:nth-child(3) li h2 {
+    border-bottom: 2px solid #000;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#section article:nth-child(3) li h2 a {
+    border: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    padding: 8px 15px;
+    /*length of title keeps changed, do not use width*/
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+#section article:nth-child(3) li h2 a:hover {
+    text-decoration: underline;
+}
+
+#section article:nth-child(3) li table {
+    font-size: 12px;
+    border: 0px solid #000;
+    table-layout: fixed;
+}
+
+#section article:nth-child(3) li table td {
+    padding: 1px 5px;
+    border: 0px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#section article:nth-child(3) li table td:nth-child(2) {
+    width: 110px;
+    text-align: center;
+    
+}
+#section article:nth-child(3) li table td:nth-child(3) {
+    width: 60px;
+    text-align: center;
+   
+    
+}
+
+#section article:nth-child(4) {
+    padding: 30px 0;
+    border: 0px solid #000;
+}
+
+#section article:nth-child(4) dl {
+    font-size: 12px;
+    color: #333;
+}
+
+#section article:nth-child(4) dl dt {
+    float: left;
+    clear: both;
+    padding-right: 0.5em;
+}
+
+#section article:nth-child(4) dl dd {
+    float: left;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+4. footer
+.menu-bottom = menu
+h1 = logo
+.menu-bottom>div = grouping for cf, global-size
+.menu-bottom>div>div = group for 3 menus
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#footer {
+    border-bottom: 1px red solid;
+}
+
+#footer .menu-bottom {
+    background-color: #f1f1f1;
+    padding: 30px 0;
+}
+
+#footer .menu-bottom h1 {
+    padding: 0 20px;
+    width: 25%;
+    float: left;
+
+}
+@keyframes RollAgain{
+    0% {transform:rotate(0deg);}
+    100%{transform:rotate(-360deg);}
+}
+
+#footer .menu-bottom h1 img {
+    /* transition: all 50s linear;  */
+    animation: RollAgain 0.03s 0s linear  infinite;
+
+}
+
+#footer .menu-bottom h1:hover img {
+    /* transform: perspective(2px) translate3d(150px,-150px,1px) rotate3d(0, 0, 2,2deg) skew(360000deg);  */
+    animation-play-state: paused;
+}
+
+#footer .menu-bottom>div>div {
+    float: left;
+    width: 75%;
+}
+
+#footer .menu-bottom .depth1>li {
+    width: calc(100% / 3);
+    float: left;
+    padding: 0 20px;
+    border-left: 1px solid #888;
+    height: 144px;
+}
+
+#footer .menu-bottom .depth1>li>a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #555;
+}
+
+#footer .menu-bottom .depth1>li>.depth2 {
+    margin: 20px 0 0;
+    /* background-color: aqua; */
+}
+
+#footer .menu-bottom .depth1>li>.depth2 li {
+    margin: 13px 0;
+}
+
+#footer .menu-bottom .depth1>li>.depth2 a {
+    font-size: 13px;
+    color: #888;
+    font-weight: 400;
+}
+
+#footer .info-company {
+    background-color: #555;
+    padding: 19px;
+    font-size: 13px;
+    color: #f1f1f1;
+    border-bottom: 3px solid rgb(166 36 67) inset;
+}
+
+#footer .info-company div>span:nth-child(1) {
+    float: left;
+}
+
+#footer .info-company div>span:nth-child(2) {
+    float: right;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+5. BODY OF aboutBook
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#section-book {
+    font-family: "Open Sans", "나눔바른고딕", NanumBarunGothic, ng, "맑은 고딕",
+        "Malgun Gothic", "돋움", Dotum, "애플 SD 산돌고딕 Neo",
+        "Apple SD Gothic Neo", AppleGothic, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+#section-book .title-book {
+    color: #b22222;
+    font-weight: bold;
+    font-size: 26px;
+
+    margin-bottom: 5px;
+}
+
+#section-book .book-level1 {
+    font-size: 14px;
+    line-height: 1.6;
+    /*1.6 =/= 1.6em*/
+
+    margin-bottom: 16px;
+    /* border: 10px solid #000;
+        border-bottom-style: inset; */
+}
+
+#section-book .book-level1 p:nth-child(2) {
+    margin-top: 14px;
+}
+
+#section-book .book-level1 p:nth-child(3) {
+    margin-top: 14px;
+}
+
+#section-book .book-level1 p:nth-child(3) strong:nth-child(2) {
+    color: #000080;
+}
+
+#section-book div {
+    /* width: 100%; */
+    /* height: 1px; */
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    border-style: inset;
+    border-width: 1px;
+
+    /* box-shadow: white inset; */
+}
+
+#section-book .book-level2 {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* #section-book .book-level2>p:nth-child(1){
+        margin-bottom: 16px;
+    } */
+#section-book .book-level2 .book-chapter {
+    margin-top: 14px;
+    color: #800080;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#section-book .book-level2 .book-chapter-index {
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+/* About book */
+/* About book */
+/* About book */
+/* About book */
+/* About book */
+/* About book */
+/* About book */
+/* About book */
+
+/* Notice */
+#notice #notice-head {
+    margin-top: 30px;
+    margin-left: 22px;
+    margin-bottom: 25px;
+    float: left;
+    font-family: "Open Sans";
+    letter-spacing: -1px;
+}
+
+#notice #notice-head div tr:nth-child(1) td:nth-child(1) {
+    display: block;
+    border-radius: 2px;
+    margin-right: 6px;
+    width: 12px;
+    height: 22px;
+
+    background-color: #db7093;
+}
+
+#notice #notice-head div tr:nth-child(1) td:nth-child(2) h1 {
+    font-size: 16px;
+    box-sizing: content-box;
+    font-family: "Open Sans";
+    color: #555;
+    line-height: 22px;
+    font-weight: 600;
+
+
+
+
+}
+
+#notice #notice-head div tr:nth-child(2) td:nth-child(1) {
+    display: block;
+    border-radius: 2px;
+    margin-right: 6px;
+    margin-top: 3px;
+    height: 12px;
+    opacity: 0.7;
+    background-color: #db7093;
+}
+
+#notice #notice-head div tr:nth-child(2) td:nth-child(2) {
+    padding-top: 5px;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 600;
+    font-family: "Open Sans";
+
+    color: #888;
+}
+
+#notice #notice-body {
+    margin-left: 10px;
+    
+}
+
+/* #notice #notice-body table .notice-no, #notice #notice-body table .time, #notice #notice-body table .notice-author, #notice #notice-body table .notice-table-m_no {
+    text-align: center;
+} */
+#notice #notice-body table .notice-no,
+#notice #notice-body table .time,
+#notice #notice-body table .notice-table-m_no {
+    color: #555;
+    font-size: 11px;
+}
+
+#notice #notice-body table .notice-author {
+    color: #333;
+    font-size: 11px;
+}
+
+#notice #notice-body table tbody .notice-title {
+    padding: 8px 6px 8px 12px;
+    text-align: left;
+    color: #222;
+    font-size: 12px;
+
+}
+
+#notice #notice-body table {
+    font-size: 12px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    text-indent: inherit;
+    border-spacing: 2px;
+    border-color: gray;
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+#notice #notice-body table thead tr th:nth-child(1) {
+    width: 43.6px;
+}
+
+#notice #notice-body table thead tr th:nth-child(2) {
+    width: 966.68px;
+}
+
+#notice #notice-body table thead tr th:nth-child(3) {
+    width: 53.4px;
+}
+
+#notice #notice-body table thead tr th:nth-child(4) {
+    width: 80.03px;
+}
+
+#notice #notice-body table thead tr th:nth-child(5) {
+    width: 56.27px;
+}
+
+#notice #notice-body table thead {
+    background: linear-gradient(to bottom, #fff 0%, #f9f9f9 100%);
+    color: #444;
+}
+
+#notice #notice-body table thead>tr th {
+    padding: 9px 10px;
+    font-family: "Open Sans";
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #bbb;
+    box-shadow: inset 0 -1px 0 #fff;
+    color: #333;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    -webkit-text-size-adjust: none;
+    letter-spacing: -1px;
+}
+#notice #notice-body table tbody{ white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+#notice #notice-body table tbody td {
+    letter-spacing: -1px;
+    border-bottom: 1px solid #eee;
+}
+
+#notice #notice-foot {
+    margin-top: 20px;
+    font-size: 11px;
+    font-family: "Open Sans";
+    letter-spacing: -1px;
+    color: #333;
+    margin-left: 22px;
+    margin-bottom: 5px;
+}
+
+.divdeco {
+    display: inline-block;
+    padding: 0px 12px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fcfcfc;
+    text-shadow: 0 1px 0 #fff;
+    letter-spacing: -1px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+#notice #notice-foot .divdeco:hover {
+    border-color: #aaa;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+#notice #notice-foot i {
+    font-size: 14px;
+
+    color: #9791b9;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+    padding-right: 4px;
+}
+
+#notice #notice-foot .divdeco:nth-child(1) a span {
+    position: relative;
+    bottom: 3%;
+}
+
+#notice #notice-foot .csearchbox {
+    display: inline-block;
+}
+
+#notice #notice-foot .csearchbox fieldset {
+    display: inline-block;
+    position: relative;
+}
+
+#notice #notice-foot form fieldset:nth-child(1),
+#notice #notice-foot form fieldset:nth-child(2) {
+    padding: 0px 6px;
+}
+
+#notice #notice-foot .csearchbox fieldset label {
+    padding: 0;
+    margin-right: 8px;
+}
+
+#notice #notice-foot .csearchbox fieldset input {
+    border: none;
+    height: 24px;
+    width: 120px;
+
+    display: none;
+}
+
+#notice #notice-foot .csearchbox fieldset input:focus {
+    outline-color: #db7093;
+}
+
+#notice #notice-foot fieldset button {
+    border: none;
+    background: none;
+
+    vertical-align: middle;
+}
+
+#notice #notice-foot .csearchbox legend {
+    display: none;
+}
+
+#notice select {
+    border: none;
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #000;
+    letter-spacing: -1px;
+    background-color: #fcfcfc;
+}
+
+/* Notice */
+
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+
+#example .exampleChapter {
+    background-color: rgb(221, 221, 221);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 30px 0px 10px;
+    text-align: center;
+}
+
+#example .exampleChapter li {
+    display: inline-block;
+    margin: 3px;
+}
+
+#example .exampleChapter li a {
+    display: inline-block;
+    background-color: rgb(51, 51, 51);
+
+    width: 58px;
+    height: 33px;
+    color: white;
+    font-size: 19px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 33px;
+}
+
+#example .exampleChapter li.active a {
+    color: yellow;
+}
+
+#example .exampleSubChapter ul {
+    background-color: #e7d3d3;
+    padding: 7px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+    display: none;
+}
+
+#example .exampleSubChapter ul.active {
+    display: block;
+}
+
+#example .exampleSubChapter ul li {
+    display: inline-block;
+    margin: 3px;
+}
+
+#example .exampleSubChapter ul li a {
+    display: inline-block;
+    background-color: #653333;
+
+    width: 62px;
+    height: 24px;
+    color: white;
+    font-size: 13px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 24px;
+}
+
+#example .exampleContentAll {
+    background-color: rgb(246, 246, 180);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .tiltle {
+    background-color: #ffffe6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+
+}
+
+#example #exampleContentBox .exampleContentList {
+    display: none;
+}
+
+#example #exampleContentBox .exampleContentList.active {
+    display: block;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent {
+    display: none;
+}
+
+#example #exampleContentBox .exampleContentList.active .exampleContent.active {
+    display: block;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .title>div {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .title>div h2 {
+    float: left;
+    font-size: 17px;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .title>div div {
+    float: right;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .title details {
+    font-size: 13.5px;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .buttons {
+    background-color: #ffffe6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 13.5px;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .buttons>div:nth-child(1) {
+    float: left;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .buttons>div:nth-child(2) {
+    float: right;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .buttons>div:nth-child(1) button {
+    background: #e0e0a1;
+    padding: 7px 3px 3px;
+    border: 1px solid rgb(150, 150, 110);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+#example #exampleContentBox .exampleContentList .exampleContent .buttons>div:nth-child(2) button {
+    background: #e0e0e0;
+    padding: 7px 3px 3px;
+    border: 1px solid rgb(150, 150, 150);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+
+}
+
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+/* Example! */
+
+/* Login!! */
+/* Login!! */
+/* Login!! */
+/* Login!! */
+/* Login!! */
+/* Login!! */
+#signIn .signInBox {
+    max-width: 450px;
+    margin: 50px auto;
+
+}
+
+#signIn .signInBox fieldset {
+    border: none;
+}
+
+#signIn .signInBox legend {
+    display: none;
+}
+
+#signIn .signInBox form p {
+    position: relative;
+    margin: 40px 0;
+}
+
+#signIn .signInBox input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 36px;
+    outline: none;
+}
+
+#signIn .signInBox input:focus {
+
+    border-bottom: 1px solid blue;
+}
+
+#signIn .signInBox form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#signIn .signInBox form label.on {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: blue;
+}
+
+#signIn .signInBox fieldset .signInButton {
+    text-align: center;
+}
+
+#signIn .signInBox fieldset .signInButton button {
+    width: 280px;
+    height: 44px;
+    background-color: #ededed;
+    border-radius: 50px;
+    border: none;
+}
+
+#signIn .signInBox .snsSignIn {
+    margin-top: 30px;
+}
+
+
+#signIn .signInBox .snsSignIn li a {
+    display: block;
+    border-radius: 5px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    padding-left: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 50px 50px;
+    color: white;
+
+}
+
+
+
+#signIn .signInBox .snsSignIn li:nth-child(1) a {
+    background-color: #ffea26;
+    color: blue;
+    background-image: url(../../javascript/all/WebProject/imgs/ico_kakao.png);
+
+}
+
+#signIn .signInBox .snsSignIn li:nth-child(2) a {
+
+    background-color: #00c300;
+
+
+    background-image: url(../../javascript/all/WebProject/imgs/ico_naver.png);
+
+}
+
+#signIn .signInBox .snsSignIn li:nth-child(3) a {
+
+    background-color: #405ea9;
+
+
+    background-image: url(../../javascript/all/WebProject/imgs/ico_face.png);
+
+}
+
+#signIn .signInBox .snsSignIn li:nth-child(4) a {
+
+    background-color: #888888;
+
+    background-image: url(../../javascript/all/WebProject/imgs/ico_cellphone.png);
+
+}
+
+/* Login!! */
+/* Login!! */
+/* Login!! */
+/* Login!! */
+/* Login!! */
+/* Login!! */
+
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+#signUp {
+    margin: 30px auto;
+}
+
+.appForm fieldset {
+    border: none;
+}
+
+.appForm legend {
+    display: none;
+}
+
+.appForm .info_pilsoo {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    font-size: 15px;
+    color: #f00;
+}
+
+.appForm .nopilsoo {
+    padding-left: 14px;
+}
+
+.appForm .pilsoo_item::before {
+    content: "*";
+    padding-right: 8px;
+    position: relative;
+    top: 4px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #f00;
+}
+
+.appForm .app_list {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd
+}
+
+.appForm .app_list li {
+    padding: 8px 0;
+}
+
+.appForm .app_list li .tit_lbl {
+    float: left;
+    /* background-color: red; */
+    width: 150px;
+    line-height: 42px;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: -2px;
+}
+
+.appForm .app_list li .app_content {
+    float: right;
+    width: calc(100% - 150px);
+
+}
+
+.appForm input[type=text],
+.appForm input[type=password],
+.appForm input[type=date] {
+    height: 45px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 0 10px;
+    transition: all 10s;
+}
+
+/* .appForm input[type=text]{
+    transition:all 0.5s;
+} */
+.appForm input[type=text]:hover,
+.appForm input[type=password]:hover,
+.appForm input[type=date]:hover {
+
+    /* background-image: linear-gradient(90deg, rgba(255,255,255,1) 46%, rgba(255,0,121,0.3561799719887955) 100%); */
+    background: pink;
+    border-color: rgba(255, 0, 0, 0.8);
+}
+
+
+.appForm input.w160 {
+    width: 160px;
+}
+
+.appForm select {
+    width: 160px;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: transparent;
+    appearance: none;
+    background: url(../all/WebProject/imgs/ico_selectArr.png) no-repeat 100% 50%;
+}
+
+.appForm select:focus {
+    background: url(../all/WebProject/imgs/ico_selectArrUp.png) no-repeat 100% 50%;
+}
+
+.appForm .idcheck {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    background: #aaa;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    transition: all 1s;
+}
+
+.appForm .idcheck:hover {
+    background-color: #000;
+}
+
+.appForm #pwdarea {
+    position: relative;
+
+}
+
+.appForm #pwdarea .pwdhint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 0 15px 10px;
+    width: 100%;
+    font-size: 14px;
+    color: #f00;
+    /* transform:translateY(-50%); */
+    /* transition:all 1s; */
+    background: lime;
+}
+
+.appForm #pwdarea .pwdhint.on
+
+/*can put hover right of #pwd*/
+    {
+
+    padding: 0px 0px 0px 10px;
+    color: blue;
+    top: -14px;
+}
+
+.appForm .radio_area,
+.appForm .checkbox_area {
+    height: 45px;
+    /* border: 1px solid #000; */
+}
+
+.appForm .css-radio,
+.appForm .css-checkbox {
+    display: none;
+}
+
+.appForm .css-radio+label,
+.appForm .css-checkbox+label {
+    margin-right: 15px;
+    padding-left: 20px;
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.appForm .css-radio+label {
+    background: url(../all/WebProject/imgs/bg_radioCheckbox.png) no-repeat;
+    height: 15px;
+    background-position: 0px -30px;
+    line-height: 15px;
+
+}
+
+.appForm .css-radio:checked+label {
+    background-position: 0px -80px;
+}
+
+.appForm .css-checkbox+label {
+    background: url(../all/WebProject/imgs/bg_radioCheckbox.png) no-repeat;
+    background-position: 0px 0px;
+    height: 15px;
+    line-height: 15px;
+
+
+}
+
+.appForm .css-checkbox:checked+label {
+    background-position: 0px -15px;
+
+}
+
+.appForm #content_lbl {
+    width: 100%;
+    height: 245px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: unset;
+
+
+}
+
+.appForm #content_lbl:placeholder-shown {
+    background-color: transparent;
+    background-image: url(../all/WebProject/imgs/SignUp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 90% 0px;
+
+}
+
+.appForm .btn_line {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.appForm .btn_line button {
+    background-color: #384d75;
+    font-size: 20px;
+    color: #fff;
+    width: 125px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+
+
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */
+/* signUp */

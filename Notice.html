@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/rwd.css">
+    
+</head>
+
+<body>
+    <header id="header">
+        <div class="cf global-size">
+            <h1>
+                <span class="blind">Open the menu</span>
+                <a href="./index.html"><img
+                        src="http://webprogramming.co.kr/files/attach/images/133/52e67495e598c2af819b4c7553aea96f.png"
+                        alt="title"></a>
+
+            </h1>
+            <div class="menuTool">
+                <i class="fa-solid fa-burger" style="color: #687382;"></i>
+            </div>
+            <div class="menuToolLeft">
+                <div class="memberInfo">
+                    <a href="./SignIn.html">SignIn</a>
+                    <a href="./SignUp.html">SignUp</a>
+                </div>
+                <nav>
+                    <ul class="depth1">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./AboutBook.html">Introduction</a>
+                            <i class="fa-solid fa-caret-down" style="color: #303236;"></i>
+                            <ul class="depth2">
+                                <li><a href="./AboutBook.html">About Book</a></li>
+                                <li><a href="#">About IDE </a></li>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="./Notice.html">Notice</a></li>
+                        <li><a href="#">Board </a>
+                            <i class="fa-solid fa-caret-down" style="color: #303236;"></i>
+                            <ul class="depth2">
+                                <li><a href="#">Know-how </a></li>
+                                <li><a href="#">Admin's Blog</a></li>
+                                <li><a href="#">Q&amp;A </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Support</a>
+                            <i class="fa-solid fa-caret-down" style="color: #303236;"></i>
+                            <ul class="depth2">
+                                <li><a href="#">Link </a></li>
+                                <li><a href="#">Download</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./example.html">Code</a>
+                            <i class="fa-solid fa-caret-down" style="color: #303236;"></i>
+                            <ul class="depth2">
+                                <li><a href="./example.html">Example</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menuToolClose">
+                    <span class="blind">Close the menu</span>
+                    <i class="fa-brands fa-xbox" style="color: #111213;"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <section id="notice" class="global-size cf">
+        <article id="notice-head">
+            <div>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td><h1>Notice</h1></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>홈페이지의 공지사항을 볼 수 있습니다.</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <article id="notice-body">
+            <table class="cf">
+                <caption class="blind">List of Article</caption>
+                <thead>
+                    <tr>
+                        <th class="notice-no">번호</th>
+                        <th class="notice-title">제목</th>
+                        <th>글쓴이</th>
+                        <th>날짜</th>
+                        <th class="notice-table-m_no">조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="notice-no">11</td>
+                        <td class="notice-title"><a href="#" class="notice-table">6장 9-(2)번 정답(학생용) 오류 수정 안내</a></td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2022.09.13</td>
+                        <td class="notice-table-m_no">315</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">10</td>
+                        <td class="notice-title"><a href="#" class="notice-table">2022.1.15(토) 오전 8시 ~ 1.17(월) 오전 9시까지
+                                서비스 일시 중단 안내</a></td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2022.01.14</td>
+                        <td class="notice-table-m_no">226</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">9</td>
+                        <td class="notice-title"><a href="#" class="notice-table">[정답 수정] 13장에서 1번의 2)문제 정답은 반복
+                                재생입니다.</a></td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2021.05.29</td>
+                        <td class="notice-table-m_no">509</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">8</td>
+                        <td class="notice-title"><a href="#" class="notice-table">[중요]예제 9-10을 최근 크롬에서 실행하려면 다음과 같이 고쳐야
+                                합니다.</a></td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2021.05.16</td>
+                        <td class="notice-table-m_no">611</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">7</td>
+                        <td class="notice-title"><a href="#" class="notice-table">집에 있는 PC에 몽구스를 설치하고 집 외부에서 접속하기
+                                <span>2</span></a></td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2018.03.16</td>
+                        <td class="notice-table-m_no">2040</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">6</td>
+                        <td class="notice-title"><a href="#" class="notice-table">초심자 분들을 위한 웹 프로그래밍 스타팅 가이드라인 게시</a>
+                        </td>
+                        <td class="notice-author"><a href="#" class="notice-member">관리자
+                            </a></td>
+                        <td class="time">2017.06.29</td>
+                        <td class="notice-table-m_no">2084</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">5</td>
+                        <td class="notice-title"><a href="#" class="notice-table">&lt;meta charset="utf-8"&gt; 태그를 삽입하여
+                                브라우저에서 정상적인 한글 출력</a></td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2017.05.06</td>
+                        <td class="notice-table-m_no">1453</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">4</td>
+                        <td class="notice-title"><a href="#" class="notice-table">폼과 웹 서버의 연동하기 예제 삽입 <span>1</span></a>
+                        </td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2017.05.06</td>
+                        <td class="notice-table-m_no">1355</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">3</td>
+                        <td class="notice-title"><a href="#" class="notice-table">연습문제 3장의 이론문제 8번에서 <span>3</span></a>
+                        </td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2017.04.03</td>
+                        <td class="notice-table-m_no">1786</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">2</td>
+                        <td class="notice-title"><a href="#" class="notice-table">책에 있는 예제 3-1의 코드</a></td>
+                        <td class="notice-author"><a href="#" class="notice-member">황기태</a></td>
+                        <td class="time">2017.03.27</td>
+                        <td class="notice-table-m_no">820</td>
+                    </tr>
+                    <tr>
+                        <td class="notice-no">1</td>
+                        <td class="notice-title"><a href="#" class="notice-table">HTML 페이지 편집기, 서브라임 텍스트3 다운로드 받기
+                                <span>1</span></a></td>
+                        <td class="notice-author"><a href="#" class="notice-member"></a>관리자</td>
+                        <td class="time">2017.01.16</td>
+                        <td class="notice-table-m_no">1596</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article id="notice-foot" class="cf">
+            <div class="divdeco">
+                <a href="./Notice.html"><i class="fa-solid fa-burger"></i><span>목록</span></a>
+            </div>
+            
+                <form action="#" method="get" name="searchbox" class="csearchbox">
+                    <fieldset class="divdeco">
+                        <legend>검색</legend>
+                        <input type="text">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i></button>
+                        <label for="">검색</label>
+                    </fieldset>
+                    <fieldset class="divdeco">
+                        <legend>검색범위</legend>
+                        <select name="searchField" id="searchField">
+                            <option value="opt1">제목+내용</option>
+                            <option value="opt2">제목</option>
+                            <option value="opt3">내용</option>
+                            <option value="opt4">댓글</option>
+                            <option value="opt5">이름</option>
+                            <option value="opt6">닉네임</option>
+                            <option value="opt7">아이디</option>
+                            <option value="opt8">태그</option>
+                        </select>
+                    </fieldset>
+
+                </form>
+            
+        </article>
+    </section>
+
+
+
+
+    <footer id="footer">
+
+        <div class="menu-bottom">
+            <div class="cf global-size">
+                <h1>
+                    <a href="#">
+                        <img src="http://webprogramming.co.kr/files/attach/images/133/52e67495e598c2af819b4c7553aea96f.png"
+                            alt="">
+                    </a>
+                </h1>
+                <div>
+                    <ul class="depth1 cf">
+                        <li><a href="#">Introduction</a>
+                            <ul class="depth2">
+                                <li><a href="#">About book</a></li>
+                                <li><a href="#">About IDE</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Code</a>
+                            <ul class="depth2">
+                                <li><a href="#">Code</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Site map</a>
+                            <ul class="depth2">
+                                <li><a href="#">W3C</a> </li>
+                                <li><a href="#">Stack Overflow</a> </li>
+                                <li><a href="#">Javascript Tutorial</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info-company">
+            <div class="cf global-size">
+                <span>Copyright 2017. Kitae Hwang All rights reserved</span>
+                <span>Created by Sein Lee</span>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
